@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "characterlevelingtree",
+	"version": "${version}",
+	"name": "character leveling tree",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Trinside"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/characterlevelingtree/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.trinside.characterlevelingtree.CharacterLevelingTree"
+		],
+		"client": [
+			"net.trinside.characterlevelingtree.CharacterLevelingTreeClient"
+		],
+		"fabric-datagen": [
+			"net.trinside.characterlevelingtree.CharacterLevelingTreeDataGenerator"
+		]
+	},
+	"mixins": [
+		"characterlevelingtree.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
